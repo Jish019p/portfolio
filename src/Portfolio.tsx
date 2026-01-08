@@ -182,7 +182,7 @@ const Portfolio: React.FC = () => {
               <p>
                 I design user-friendly interfaces, ensuring a smooth and engaging user experience in digital products using techs like HTML, CSS, Javascript and react.js + typescript, node.js, express.js, mongodb.
               </p>
-              <a href="#">Check Projects</a>
+              <a href="https://github.com/Jish019p">Check Projects</a>
             </div>
             <div>
               <i className="fa-brands fa-app-store"></i>
@@ -190,7 +190,7 @@ const Portfolio: React.FC = () => {
               <p>
                 builds and maintains web applications using frameworks like Django and Flask, focusing on backend development, database management, and API integration
               </p>
-              <a href="#">check Projects</a>
+              <a href="https://github.com/Jish019p">check Projects</a>
             </div>
           </div>
         </div>
@@ -244,11 +244,11 @@ const Portfolio: React.FC = () => {
               +916264697646
             </p>
             <div className="social">
-              <a href="#"><i className="fa-brands fa-line"></i></a>
-              <a href="#"><i className="fa-brands fa-twitter"></i></a>
-              <a href="#"><i className="fa-brands fa-instagram"></i></a>
-              <a href="#"><i className="fa-brands fa-linkedin"></i></a>
-              <a href="#"><i className="fa-brands fa-discord"></i></a>
+             
+              <a href=" https://x.com/ANSARIXjishan?t=WkxnCvWCr_i5wC4q5URU7A&s=08"><i className="fa-brands fa-twitter"></i></a>
+              <a href="https://www.instagram.com/jish.01?igsh=MnoxbG1lMmdpYTR3"><i className="fa-brands fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/jishan-ansari-74363a280"><i className="fa-brands fa-linkedin"></i></a>
+              
             </div>
             <a href="images/jishan's resume..pdf" download className="btn btn2">
               Download CV
