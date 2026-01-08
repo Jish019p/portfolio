@@ -352,16 +352,25 @@ nav .fa-solid{
 /* ----css for small screen --- */
 @media only screen and (max-width:600px){
     #header{
-        background-image: url(/portfolio/images/b2.jpeg);
+        text-align: center;
+        background-image: url(/images/b2-removebg-preview.png);
+        background-size: contain;
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-position-y: 10%;
     }
     .header-text{
-        margin-top: 100%;
+        margin-top: 200%;
         font-size: 16px;
     }
     
     .header-text h1{
         font-size: 30px;
         margin-top: 10px;
+    }
+    nav img.logo{
+        margin: 0 auto;
+        display: block;
     }
     nav .fa-solid{
         display: block;

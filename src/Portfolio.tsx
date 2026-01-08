@@ -1,5 +1,5 @@
 import React, { useState, type FormEvent } from 'react';
-import './portfolio.css';
+import './Portfolio.css';
 
 const Portfolio: React.FC = () => {
   const [activeTab, setActiveTab] = useState<string>('skills');
