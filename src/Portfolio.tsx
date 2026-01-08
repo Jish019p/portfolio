@@ -250,7 +250,7 @@ const Portfolio: React.FC = () => {
               <a href="https://www.linkedin.com/in/jishan-ansari-74363a280"><i className="fa-brands fa-linkedin"></i></a>
               
             </div>
-            <a href="images/jishan's resume..pdf" download className="btn btn2">
+            <a href="images/jishan's resume.pdf" download className="btn btn2">
               Download CV
             </a>
           </div>
@@ -271,7 +271,7 @@ const Portfolio: React.FC = () => {
           </div>
         </div>
         <div className="copyright">
-          xyz @ jishan <i className="fa-solid fa-heart"></i> copyright
+          2023 @ jishan <i className="fa-solid fa-heart"></i> copyright
         </div>
       </div>
     </div>
