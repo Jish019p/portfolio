@@ -214,7 +214,7 @@ const Portfolio: React.FC = () => {
               <div className="layer">
                 <h3>HealthFrigma</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, ullam.</p>
-                <a href="#"><i className="fa-solid fa-up-right-from-square"></i></a>
+                <a href="https://github.com/Jish019p/minor-fitness"><i className="fa-solid fa-up-right-from-square"></i></a>
               </div>
             </div>
             <div className="work">
