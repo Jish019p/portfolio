@@ -357,10 +357,10 @@ nav .fa-solid{
         background-size: contain;
         background-position: center top;
         background-repeat: no-repeat;
-        background-position-y: 10%;
+        background-position-y: 25%;
     }
     .header-text{
-        margin-top: 200%;
+        margin-top: 170%;
         font-size: 16px;
     }
     
@@ -371,6 +371,7 @@ nav .fa-solid{
     nav img.logo{
         margin: 0 auto;
         display: block;
+        
     }
     nav .fa-solid{
         display: block;
