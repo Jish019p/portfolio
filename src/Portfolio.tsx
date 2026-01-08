@@ -1,4 +1,4 @@
-import React, { useState, FormEvent } from 'react';
+import React, { useState, type FormEvent } from 'react';
 import './portfolio.css';
 
 const Portfolio: React.FC = () => {
@@ -26,7 +26,7 @@ const Portfolio: React.FC = () => {
     setMessage('Sending...');
 
     try {
-      const response = await fetch(scriptURL, { 
+      await fetch(scriptURL, { 
         method: 'POST', 
         body: new FormData(form),
         mode: 'no-cors'
@@ -48,7 +48,7 @@ const Portfolio: React.FC = () => {
       <div id="header">
         <div className="container">
           <nav>
-            <img src="./src/images/logos.png" className="logo" alt="Logo" />
+            <img src="/portfolio/images/logos.png" className="logo" alt="Logo" />
             <ul id="sidemenu" style={{ right: isSideMenuOpen ? '0' : '-200px' }}>
               <li><a href="#header">Home</a></li>
               <li><a href="#about">About</a></li>
@@ -71,7 +71,7 @@ const Portfolio: React.FC = () => {
         <div className="container">
           <div className="row">
             <div className="about-col-1">
-              <img src="./src/images/Background.jpeg" alt="Profile" />
+              <img src="/portfolio/images/Background.jpeg" alt="Profile" />
             </div>
             <div className="about-col-2">
               <h1 className="sub-title">About me</h1>
@@ -202,7 +202,7 @@ const Portfolio: React.FC = () => {
           <h1 className="sub-title">My Work</h1>
           <div className="work-list">
             <div className="work">
-              <img src="./src/images/work-1.png" alt="Work 1" />
+              <img src="/portfolio/images/work-1.png" alt="Work 1" />
               <div className="layer">
                 <h3>Aaradhya Dharma</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, ullam.</p>
@@ -210,7 +210,7 @@ const Portfolio: React.FC = () => {
               </div>
             </div>
             <div className="work">
-              <img src="./src/images/work-2.png" alt="Work 2" />
+              <img src="/portfolio/images/work-2.png" alt="Work 2" />
               <div className="layer">
                 <h3>HealthFrigma</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, ullam.</p>
@@ -218,7 +218,7 @@ const Portfolio: React.FC = () => {
               </div>
             </div>
             <div className="work">
-              <img src="./src/images/work-3.png" alt="Work 3" />
+              <img src="/portfolio/images/work-3.png" alt="Work 3" />
               <div className="layer">
                 <h3>Ec-producerent</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, ullam.</p>
