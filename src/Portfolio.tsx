@@ -1,10 +1,9 @@
-import React, { useState, type FormEvent } from 'react';
+import React, { useState } from 'react';
 import './Portfolio.css';
 
 const Portfolio: React.FC = () => {
   const [activeTab, setActiveTab] = useState<string>('skills');
   const [isSideMenuOpen, setIsSideMenuOpen] = useState<boolean>(false);
-  const [message, setMessage] = useState<string>('');
 
   const openTab = (tabName: string) => {
     setActiveTab(tabName);
@@ -18,28 +17,11 @@ const Portfolio: React.FC = () => {
     setIsSideMenuOpen(false);
   };
 
-  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    const form = e.currentTarget;
-    const scriptURL = 'https://docs.google.com/spreadsheets/d/18enDuOJ9Wbaw-QndwZj5G6T5JQ2y2WahSRYenAlpRH8/edit?gid=0#gid=0';
-
-    setMessage('Sending...');
-
-    try {
-      await fetch(scriptURL, { 
-        method: 'POST', 
-        body: new FormData(form),
-        mode: 'no-cors'
-      });
-      
-      setMessage('Message sent successfully!');
-      form.reset();
-      setTimeout(() => setMessage(''), 5000);
-    } catch (error) {
-      console.error('Error!', error);
-      setMessage('Failed to send message. Please try again.');
-      setTimeout(() => setMessage(''), 5000);
-    }
+  const handleWhatsAppMessage = () => {
+    const phoneNumber = '916264697646'; // Your phone number without + or spaces
+    const message = 'Hello! I would like to get in touch with you.';
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappURL, '_blank');
   };
 
   return (
@@ -205,7 +187,7 @@ const Portfolio: React.FC = () => {
               <img src="/portfolio/images/work-1.png" alt="Work 1" />
               <div className="layer">
                 <h3>Aaradhya Dharma</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, ullam.</p>
+                <p>My Initial Project of E-commerce website with Python Full Stacj Development</p>
                 <a href="https://github.com/Jish019p/aaradhyadharma"><i className="fa-solid fa-up-right-from-square"></i></a>
               </div>
             </div>
@@ -213,7 +195,7 @@ const Portfolio: React.FC = () => {
               <img src="/portfolio/images/work-2.png" alt="Work 2" />
               <div className="layer">
                 <h3>HealthFrigma</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, ullam.</p>
+                <p>A platform of Gym , HealthCares , And Nutrients For maintaining their clients and User Friendly outcomes.</p>
                 <a href="https://github.com/Jish019p/minor-fitness"><i className="fa-solid fa-up-right-from-square"></i></a>
               </div>
             </div>
@@ -221,12 +203,11 @@ const Portfolio: React.FC = () => {
               <img src="/portfolio/images/work-3.png" alt="Work 3" />
               <div className="layer">
                 <h3>Ec-producerent</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, ullam.</p>
+                <p>An e-commerce platform designed to connect producers and consumers efficiently. With multiple management works as their Business Requires with React+typescript and Node.js Techs.</p>
                 <a href="#"><i className="fa-solid fa-up-right-from-square"></i></a>
               </div>
             </div>
           </div>
-          <a href="#" className="btn">see more</a>
         </div>
       </div>
 
@@ -255,19 +236,12 @@ const Portfolio: React.FC = () => {
             </a>
           </div>
           <div className="contact-right">
-            <form name="submit-to-google-sheet" onSubmit={handleSubmit}>
-              <input type="text" name="name" placeholder="Your Name" required />
-              <input type="email" name="email" placeholder="Your Email" required />
-              <textarea 
-                name="message" 
-                id="message" 
-                rows={13} 
-                placeholder="Your message" 
-                required
-              />
-              <button type="submit" className="btn btn2">Submit</button>
-            </form>
-            <span id="msg">{message}</span>
+            <button onClick={handleWhatsAppMessage} className="btn btn2 whatsapp-btn">
+              <i className="fa-brands fa-whatsapp"></i> Message on WhatsApp
+            </button>
+            <p style={{ marginTop: '20px', color: '#ababab' }}>
+              Click the button above to send me a message directly on WhatsApp!
+            </p>
           </div>
         </div>
         <div className="copyright">

@@ -328,6 +328,31 @@ form .btn2{
     margin-top: 20px;
     cursor: pointer;
 }
+
+/* WhatsApp Button Styles */
+.whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 14px 30px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    background: #25D366;
+    border: none;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.whatsapp-btn:hover {
+    background: #128C7E;
+    transform: translateY(-3px);
+}
+
+.whatsapp-btn i {
+    font-size: 24px;
+}
+
 .copyright{
     width: 100%;
     padding:  25px 0;
