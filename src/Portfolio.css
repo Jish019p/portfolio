@@ -406,11 +406,12 @@ nav .fa-solid{
         background: #ff004f;
         position: fixed;
         top: 0;
-        right: -200px;
+        left: -200px;
         padding-top: 50px;
         width: 200px;
         height: 100vh;
-        transition: right 0.5s;
+        transition: left 0.5s;
+        z-index: 1000;
     }
     nav ul li {
         display: block;

@@ -31,15 +31,15 @@ const Portfolio: React.FC = () => {
         <div className="container">
           <nav>
             <img src="/portfolio/images/logos.png" className="logo" alt="Logo" />
-            <ul id="sidemenu" style={{ right: isSideMenuOpen ? '0' : '-200px' }}>
+            <ul id="sidemenu" style={{ left: isSideMenuOpen ? '0' : '-200px' }}>
               <li><a href="#header">Home</a></li>
               <li><a href="#about">About</a></li>
               <li><a href="#services">Services</a></li>
               <li><a href="#portfolio">Projects</a></li>
               <li><a href="#contact">Contact</a></li>
-              <i className="fa-solid fa-circle-xmark" onClick={closeMenu}></i>
+              <i className="fa-solid fa-circle-xmark" style={{ marginLeft:"30px", left: isSideMenuOpen ? '0' : '-25px' }} onClick={closeMenu}></i>
             </ul>
-            <i className="fa-duotone fa-solid fa-bars" onClick={openMenu}></i>
+            <i className="fa-duotone fa-solid fa-bars" style={{ display: isSideMenuOpen ? 'none' : 'block' }} onClick={openMenu}></i>
           </nav>
           <div className="header-text">
             <p>Mern Stack Developer</p>
